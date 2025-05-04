@@ -6,7 +6,7 @@
   "homepage": "https://Ahhiyawa1.github.io/stellaris-galaxy-tool",
   "scripts": {
     "build": "npx webpack --config webpack.dev.js",
-    "predeploy": "npx webpack --config webpack.prod.js",
+    "predeploy": "set NODE_OPTIONS=--openssl-legacy-provider && npx webpack --config webpack.prod.js",
     "deploy": "gh-pages -d dist"
   },
   "author": "Mark Ting",
