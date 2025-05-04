@@ -3,9 +3,11 @@
   "version": "1.0.1",
   "description": "Browser-based tool for editing Stellaris static galaxy scenario map files",
   "main": "server.js",
+  "homepage": "https://Ahhiyawa1.github.io/stellaris-galaxy-tool",
   "scripts": {
     "build": "npx webpack --config webpack.dev.js",
-    "deploy": "npx webpack --config webpack.prod.js"
+    "predeploy": "npx webpack --config webpack.prod.js",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Mark Ting",
   "license": "MIT",
@@ -26,6 +28,7 @@
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
+    "gh-pages": "^6.3.0",
     "style-loader": "^0.20.3",
     "uglifyjs-webpack-plugin": "^1.2.3",
     "webpack": "^4.1.1",
